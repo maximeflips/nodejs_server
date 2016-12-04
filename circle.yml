@@ -1,12 +1,16 @@
+# Specify that we will use docker
 machine:
   services:
     - docker
 
+# Specify that we will firstly run our project (in daemon mode)
+# and finally use mocha to run the test suit.
 test:
   override:
     - docker-compose up -d
     - mocha
 
+# Specify to execute the $DEPLOY command for the deployment
 deployment:
   hub:
     branch: master
