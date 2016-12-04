@@ -1,6 +1,3 @@
-//
-   Created for DevOps course on 21/11/2016.
-
 doctype html
 html(lang='en')
     head
@@ -19,23 +16,27 @@ html(lang='en')
                 span #{todoList}
                 br
                 form(data-parsley-validate='', method='get', action='/new', name='login_form')
-                    label (Re)Initialize the Todo List :
-                    button.btn.btn-primary(type='submit') Create
+                    label (Re)Initialize the Todo List
+                    br
+                    button.btn.btn-success(type='submit') Create
                 br
                 form(data-parsley-validate='', method='post', action='/add', name='login_form')
                     label Add things to do (String) :
-                    input(name='things', type='text')
+                    input(required='required', name='things', type='text')
+                    br
                     button.btn.btn-success(type='submit') Add things
                 br
                 form(data-parsley-validate='', method='post', action='/delete', name='login_form')
                     label Delete things (Number) :
-                    input(name='_id', type='number')
-                    button.btn.btn-danger(type='submit') Delete things
+                    input(required='required', name='_id', type='number')
+                    br
+                    button.btn.btn-success(type='submit') Delete things
                 br
                 form(data-parsley-validate='', method='post', action='/get', name='login_form')
                     label Get things (Number) :
-                    input(name='_id', type='number')
-                    button.btn.btn-info(type='submit') Get things
+                    input(required='required', name='_id', type='number')
+                    br
+                    button.btn.btn-success(type='submit') Get things
 
 
         script (href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')

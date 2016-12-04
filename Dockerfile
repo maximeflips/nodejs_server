@@ -15,6 +15,8 @@ COPY package.json /usr/src/app/
 # Run the basic command to install node and it's dependancy.
 RUN npm install
 
+RUN npm install mocha --save
+
 # Copy the content of the current dir (and sub-dir) to the container's 'WORKDIR'.
 COPY . /usr/src/app
 
