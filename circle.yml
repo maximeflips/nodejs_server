@@ -12,7 +12,7 @@ test:
 
 # Specify to execute the $DEPLOY command for the deployment
 deployment:
-  hub:
-    branch: master
+  staging:
+    branch: dev
     heroku:
       appname: thawing-everglades-30723
