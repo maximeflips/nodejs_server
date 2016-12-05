@@ -16,3 +16,5 @@ deployment:
     branch: master
     commands:
       - $DEPLOY
+    heroku:
+      appname: thawing-everglades-30723
