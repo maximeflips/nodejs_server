@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 
 var jsonParser = bodyParser.json();
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 app.use(express.static(__dirname + '/public'));
 app.use(require('body-parser').urlencoded({ extended: true }));
