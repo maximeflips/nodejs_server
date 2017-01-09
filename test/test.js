@@ -4,7 +4,7 @@
 var assert = require("assert");
 var todo_utils = require('../todo_utils');
 
-describe('#Check Error', function() {
+describe('# Check Error', function() {
     before('todo_utils._init()', function() {
         // runs before all tests in this block
         todo_utils._init();
